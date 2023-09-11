@@ -1,0 +1,55 @@
+@use "../utilities" as u;
+
+header{
+    width: 45rem;
+    max-width: 100%;
+    padding: 25px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+
+    border-radius: 15px;
+    box-shadow: 11px 14px 45px -21px u.$light-grayish-blue-2;
+
+    background-color: u.$main-background-color;
+    
+    .tittle-container {
+        margin-left: 10px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        #tittle {
+            font-size: 22px;
+            margin-right: 5px;
+        }
+
+        .notifications-counter{
+            padding: 3px 15px;
+            border-radius: 4px;
+            margin-left: 5px;
+
+            align-self: center;
+
+            font-size: 16px;
+            font-weight: 100;
+            background-color: u.$notification-counter-background-color;
+            color: white;
+        }
+    }
+    .mark-as-read {
+        background: none;
+        border: none;
+        padding: 0;
+
+        margin-left: auto;
+        margin-right: 15px;
+
+        cursor: pointer;
+        color: u.$dark-grayish-blue;
+    }
+}
